@@ -7,7 +7,7 @@
   :ring {:handler surma.handler/app}
   :uberjar-name "server.jar"
   :min-lein-version "2.8.1"
-  :plugins [[environ/environ.lein "1.1.0"]]
+  :plugins [[lein-environ "1.1.0"]]
   :hooks [environ.leiningen.hooks]
   :profiles {:uberjar {:aot :all}
              :dev     {:dependencies [[javax.servlet/javax.servlet-api "3.1.0"]]
